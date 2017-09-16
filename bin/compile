@@ -68,9 +68,7 @@ export LANGUAGE=en_US.UTF-8
 echo "-----> Building Jekyll site"
 cd $BUILD_DIR
 rbenv local 2.2.1
-yarn
 bundle install
-gulp build --production
 
 if [[ ! -e "${BUILD_DIR}/www" ]]; then
   echo "-----> Copy static files to www"
