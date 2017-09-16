@@ -69,6 +69,7 @@ echo "-----> Building Jekyll site"
 cd $BUILD_DIR
 rbenv local 2.2.1
 bundle install
+bundle exec jekyll build
 
 if [[ ! -e "${BUILD_DIR}/www" ]]; then
   echo "-----> Copy static files to www"
